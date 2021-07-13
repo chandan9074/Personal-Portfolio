@@ -458,7 +458,7 @@
 .under_line_p {
   width: 30vh;
   border-bottom: 0.5vh solid tomato;
-  margin-left: 78vh;
+  /* margin-left: 78vh; */
 }
 
 .projects {
@@ -684,7 +684,7 @@
     display: flex;
     flex-direction: column-reverse;
     padding: 3vh 3vh 3vh 3vh;
-    /* top: 15%; */
+    top: 15%;
   }
   .home {
     width: 100%;
@@ -908,7 +908,6 @@
   .under_line_p {
     width: 20vh;
     border-bottom: 0.3vh solid tomato;
-    margin-left: 14vh;
   }
   .projects_title {
     font-size: 3vh;
@@ -924,7 +923,6 @@
     margin: 0vh 0vh 0vh -4vh;
     width: 20vh;
   }
-
   .hack_ul {
     width: 14vh;
     margin-top: 0.3vh;
@@ -966,8 +964,22 @@
     width: 100%;
     height: 120vh;
   }
-
   .contact_me {
-    display: none;
+    height: 20vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+  }
+  ._me_title {
+    margin: 0vh;
+    font-size: 3vh;
+    font-family: "Roboto Slab", serif;
+    color: whitesmoke;
+  }
+  .under_line_p {
+    width: 19vh;
+    border-bottom: 0.3vh solid tomato;
+  }
+  .address_margin {
+    margin-top: 3vh;
   }
 }

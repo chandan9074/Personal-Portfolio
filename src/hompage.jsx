@@ -196,7 +196,7 @@ const Home = () => {
 
                 <div id="proj" className="projects">
                     <p className="projects_title" data-aos="fade-down">Few Projects</p>
-                    <div style={{width:"100%"}}>
+                    <div >
                         <div className="under_line_p" data-aos="fade-left"></div>
                     </div>
                     <div className="project_pos">
@@ -230,7 +230,7 @@ const Home = () => {
 
                 <div id="contact" className="contact_me">
                     <p className="_me_title" data-aos="fade-down">Contact Me</p>
-                    <div style={{width:"100%"}}>
+                    <div>
                         <div className="under_line_p" data-aos="fade-left"></div>
                     </div>
                     <div className="address_margin" data-aos="zoom-out">
