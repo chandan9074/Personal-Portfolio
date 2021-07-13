@@ -161,6 +161,7 @@
   width: 60vh;
   font-size: 2.5vh;
   font-family: "Newsreader", serif;
+  text-align: ;
 }
 
 .ul_about {
@@ -689,4 +690,42 @@
 
   /* about card */
 
+  .about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 235, 235);
+  }
+
+  .chandan_a_style {
+    width: 25vh;
+    height: 27vh;
+    margin-top: 5vh;
+  }
+
+  .about_me_pos {
+    margin-bottom: 5vh;
+    margin-left: 0;
+  }
+  .about_me_title {
+    font-size: 3vh;
+  }
+
+  .about_me_des {
+    width: 30vh;
+    font-size: 2vh;
+    text-align: justify;
+  }
+  .ul_about {
+    width: 18vh;
+    border-bottom: 0.3vh solid tomato;
+  }
+
+  .skills,
+  .projects,
+  .contact_me {
+    display: none;
+  }
 }
