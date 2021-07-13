@@ -129,46 +129,46 @@ const Home = () => {
                             <div className="skill_property_box">
                                 {web?<div className="web_language">
                                     <div className="html_card move_card">
-                                        <img style={{width:"12vh", height:"12vh"}} src={html} alt="html.." />
+                                        <img className="img_style_1" src={html} alt="html.." />
                                     </div>
                                     <div className="css_card move_card">
-                                        <img style={{width:"8vh", height:"10vh"}} src={css} alt="css.." />
+                                        <img className="img_style_2" src={css} alt="css.." />
                                     </div>
                                     <div className="js_card move_card">
-                                        <img style={{width:"8vh", height:"9vh"}} src={js} alt="js.." />
+                                        <img className="img_style_3" src={js} alt="js.." />
                                     </div>
                                 </div>:null}
                                 {prog?<div className="prog_language">
                                     <div className="c_card move_card">
-                                        <img style={{width:"12vh", height:"12vh"}} src={c} alt="c.." />
+                                        <img className="img_style_1" src={c} alt="c.." />
                                     </div>
                                     <div className="c_p_card move_card">
-                                        <img style={{width:"10vh", height:"10vh"}} src={c_p} alt="c++.." />
+                                        <img className="img_style_4" src={c_p} alt="c++.." />
                                     </div>
                                     <div className="py_card move_card">
-                                        <img style={{width:"12vh", height:"10vh"}} src={py} alt="py.." />
+                                        <img className="img_style_5" src={py} alt="py.." />
                                     </div>
                                 </div>:null}
                                 {design?<div className="design">
                                     <div className="ps_card move_card">
-                                        <img style={{width:"12vh", height:"12vh"}} src={ps} alt="ps.." />
+                                        <img className="img_style_1" src={ps} alt="ps.." />
                                     </div>
                                     <div className="pr_card move_card">
-                                        <img style={{width:"12vh", height:"6vh"}} src={pr} alt="pr.." />
+                                        <img className="img_style_6" src={pr} alt="pr.." />
                                     </div>
                                     <div className="ai_card move_card">
-                                        <img style={{width:"10vh", height:"10vh"}} src={ai} alt="ai.." />
+                                        <img className="img_style_4" src={ai} alt="ai.." />
                                     </div>
                                 </div>:null}
                                 {fram?<div className="framework">
                                     <div className="dj_card move_card">
-                                        <img style={{width:"10vh", height:"10vh"}} src={dj} alt="ps.." />
+                                        <img className="img_style_4" src={dj} alt="ps.." />
                                     </div>
                                     <div className="r_js_card move_card">
-                                        <img style={{width:"10vh", height:"10vh"}} src={r_js} alt="pr.." />
+                                        <img className="img_style_4" src={r_js} alt="pr.." />
                                     </div>
                                     <div className="b_c_card move_card">
-                                        <img style={{width:"8vh", height:"8vh"}} src={b_c} alt="ai.." />
+                                        <img className="img_style_7" src={b_c} alt="ai.." />
                                     </div>
                                 </div>:null}
                             </div>

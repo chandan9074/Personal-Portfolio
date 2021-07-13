@@ -227,6 +227,36 @@
   margin-bottom: 1vh;
 }
 
+.img_style_1 {
+  width: 12vh;
+  height: 12vh;
+}
+
+.img_style_2 {
+  width: 8vh;
+  height: 10vh;
+}
+.img_style_3 {
+  width: 8vh;
+  height: 9vh;
+}
+.img_style_4 {
+  width: 10vh;
+  height: 10vh;
+}
+.img_style_5 {
+  width: 12vh;
+  height: 10vh;
+}
+.img_style_6 {
+  width: 12vh;
+  height: 6vh;
+}
+.img_style_7 {
+  width: 8vh;
+  height: 8vh;
+}
+
 .html_card {
   padding: 3vh;
   background-color: rgb(230, 225, 225);
@@ -723,7 +753,145 @@
     border-bottom: 0.3vh solid tomato;
   }
 
-  .skills,
+  /* skills card */
+
+  .skills {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .skill_card {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh;
+    border-radius: 2vh;
+    box-shadow: rgb(148, 147, 147) 0vh 0vh 3vh;
+  }
+  .skill_des {
+    width: 35vh;
+    font-size: 1.5vh;
+    text-align: center;
+    font-family: "Newsreader", serif;
+  }
+  .under_line {
+    width: 16vh;
+    border-bottom: 0.3vh solid tomato;
+    margin-left: 2vh;
+  }
+  .skill_card_heading {
+    font-size: 3vh;
+  }
+  .img_style_1 {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .img_style_2 {
+    width: 4vh;
+    height: 5vh;
+  }
+  .img_style_3 {
+    width: 4vh;
+    height: 4.5vh;
+  }
+  .img_style_4 {
+    width: 5vh;
+    height: 5vh;
+  }
+  .img_style_5 {
+    width: 6vh;
+    height: 4vh;
+  }
+  .img_style_6 {
+    width: 6vh;
+    height: 3vh;
+  }
+  .img_style_7 {
+    width: 5.5vh;
+    height: 5.5vh;
+  }
+  .txt_skill {
+    transform: rotate(270deg);
+    height: 2vh;
+    font-size: 1.5vh;
+    margin: 5vh 0vh 0vh 0vh;
+    border-bottom: 0.3vh solid tomato;
+    font-family: "Roboto Slab", serif;
+  }
+  .html_card {
+    padding: 1.5vh 1.3vh 1.5vh 1.3vh;
+  }
+  .css_card {
+    padding: 2vh 2.3vh 1.5vh 2.3vh;
+  }
+  .skill_property_box {
+    padding: 1vh;
+  }
+  .js_card {
+    padding: 2.5vh 2.3vh 1.5vh 2.3vh;
+  }
+  .c_card {
+    padding: 1.5vh 1.3vh 1.5vh 1.3vh;
+  }
+  .c_p_card {
+    padding: 2vh 1.8vh 1.5vh 1.8vh;
+  }
+  .py_card {
+    padding: 2.5vh 1.3vh 1.5vh 1.3vh;
+  }
+  .ps_card {
+    padding: 1.5vh 1.4vh 1.5vh 1.4vh;
+  }
+  .pr_card {
+    padding: 2.8vh 1.2vh 1.5vh 1.2vh;
+  }
+  .ai_card {
+    padding: 1.7vh 1.6vh 1.7vh 1.6vh;
+  }
+  .dj_card {
+    padding: 2vh 1.5vh 1.3vh 1.8vh;
+  }
+  .r_js_card {
+    padding: 2vh 1.3vh 1.3vh 1.3vh;
+  }
+  .b_c_card {
+    padding: 2vh 1.8vh 1.3vh 1.8vh;
+  }
+  .web_btn,
+  .pr_btn,
+  .des_btn,
+  .fram_btn {
+    font-size: 1.2vh;
+    padding: 0.5vh 1vh 0.5vh 1vh;
+  }
+  .btn_w_ul {
+    width: 4vh;
+    border-bottom: 0.3vh solid tomato;
+    margin-top: 0.4vh;
+  }
+  .btn_p_ul {
+    width: 8vh;
+    border-bottom: 0.3vh solid tomato;
+    margin-top: 0.4vh;
+  }
+  .btn_d_ul {
+    width: 2vh;
+    border-bottom: 0.3vh solid tomato;
+    margin-top: 0.4vh;
+  }
+  .btn_f_ul {
+    width: 3vh;
+    border-bottom: 0.3vh solid tomato;
+    margin-top: 0.4vh;
+  }
+  .skill_property_box {
+    padding: 1vh;
+  }
+  .skill_card_property {
+    margin-left: 0;
+  }
   .projects,
   .contact_me {
     display: none;
