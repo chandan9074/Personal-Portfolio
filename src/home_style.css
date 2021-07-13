@@ -73,7 +73,7 @@
   position: absolute;
   background-color: whitesmoke;
   top: 23%;
-  left: 18%;
+  /* left: 18%; */
   display: flex;
   flex-direction: row;
   padding: 5vh 5vh 0vh 10vh;
@@ -634,4 +634,59 @@
 ::-webkit-scrollbar-thumb {
   background: #bbbbbb;
   border-radius: 2vh;
+}
+
+/* media queries */
+
+/* mobile devices */
+
+@media only screen and (max-width: 480px) {
+  /* home card */
+
+  .home_card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3vh 3vh 3vh 3vh;
+    top: 15%;
+  }
+  .home {
+    height: 90vh;
+  }
+  .chandan_h_style {
+    width: 30vh;
+    height: 40vh;
+  }
+  .ul_chandan {
+    width: 25vh;
+    border-bottom: 0.3vh solid tomato;
+    border-radius: 2vh;
+  }
+
+  .home_t_1 {
+    margin: 5vh 0vh 0vh 0vh;
+    font-size: 1.6vh;
+  }
+  .home_t_2 {
+    margin: 1vh 0vh 0vh 0vh;
+    font-size: 2.5vh;
+  }
+  .card_h_des {
+    margin: 0;
+  }
+  .home_t_3 {
+    margin: 1vh 0vh 0vh 0vh;
+    font-size: 1.3vh;
+  }
+  .resume_btn {
+    font-size: 1.2vh;
+    margin-top: 2.5vh;
+    padding: 0.5vh 1.3vh;
+    background-color: rgb(247, 198, 193);
+    border: 0.3vh solid rgb(240, 143, 126);
+    letter-spacing: 0.1vh;
+    border-radius: 0.7vh;
+  }
+
+  /* about card */
+
 }
