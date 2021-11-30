@@ -26,12 +26,15 @@ import ck_logo from './/pictures/ck_logo.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NavigationBar from './Shared/NavigationBar';
+
 
 AOS.init({
     delay: 0,
     offset: 120,
     duration: 900, 
     easing: 'ease-in-out-back',
+    once: true,
     mirror: true,
 });
 
@@ -73,7 +76,7 @@ const Home = () => {
 
     return ( 
         <div>
-            <div className="navbar">
+            {/* <div className="navbar">
                 <img className="ck_logo_img" src={ck_logo} alt="ck_logo..." />
                 <div className="navbar1"> 
                     <a href="#home" className="nav_h">Home</a>
@@ -81,7 +84,8 @@ const Home = () => {
                     <a href="#skill" className="nav_s">Skill</a>
                     <a href="#proj" className="nav_p">Projects</a>
                 </div>
-            </div>
+            </div> */}
+            <NavigationBar />
             <div>
                 <div className="home">
                     <div id="home" className="home_card_pos">
@@ -91,7 +95,7 @@ const Home = () => {
                                 <p className="home_t_2" data-aos="zoom-in">Chandan Kumar Das</p>
                                 <div className="ul_chandan" data-aos="fade"></div>
                                 <p className="home_t_3" data-aos="fade-up-left">Full Stack Developer</p>
-                                <a href={require('./pictures/chandan.pdf').default} target="_blank"><button className="resume_btn" data-aos="fade">RESUME</button></a>
+                                <a href={require('./pictures/Chandan-Kumar-Das-Full-Stack-Developer.pdf').default} target="_blank"><button className="resume_btn" data-aos="fade">RESUME</button></a>
                             </div>
                             <img className="chandan_h_style" data-aos="fade" src={chandan_h} alt="chandan_h..." />
                         </div>
@@ -194,7 +198,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div id="proj" className="projects">
+                <div id="proj" className="projects pb-5">
                     <p className="projects_title" data-aos="fade-down">Few Projects</p>
                     <div >
                         <div className="under_line_p" data-aos="fade-left"></div>
@@ -224,16 +228,15 @@ const Home = () => {
                             </p>
                             <a className="git" href="https://github.com/chandan9074/Link-Short-Client/"><img src={git} alt="git" className="git_img"  /></a>
                         </div>
-
                     </div>
                 </div>
 
                 <div id="contact" className="contact_me">
-                    <p className="_me_title" data-aos="fade-down">Contact Me</p>
+                    <p className="_me_title" data-aos="fade-down">Connect Me</p>
                     <div>
                         <div className="under_line_p" data-aos="fade-left"></div>
                     </div>
-                    <div className="address_margin" data-aos="zoom-out">
+                    <div className="address_margin flex" data-aos="zoom-out">
                         <a href="https://github.com/chandan9074/" ><img className="add_size g_btn" src={github} alt="github..." /></a>
                         <a href="https://www.facebook.com/ChandanRaj0110/" ><img className="add_size f_btn" src={fb} alt="fb..." /></a>
                         <a href="https://www.linkedin.com/in/chandan-kumar-das-53093720b/" ><img className="add_size l_btn" src={lk} alt="lk..." /></a>

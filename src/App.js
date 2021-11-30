@@ -6,6 +6,15 @@ import Home from './hompage';
 import RiseLoader
 from "react-spinners/RiseLoader";
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import ContactMe from './ContactMepage/ContactMe';
+import NavigationBar from './Shared/NavigationBar';
+
 function App() {
 
   const [loading, setLoading] = useState(false);
@@ -24,7 +33,13 @@ function App() {
       {loading?
         <div className="open"><RiseLoader color={"#000000"} loading={loading} size={"3vh"}/></div> 
       :
-      <Home />}
+      <BrowserRouter>
+      {/* <NavigationBar /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contactme" element={<ContactMe />} />
+      </Routes>
+    </BrowserRouter>}
     </div>
   );
 }

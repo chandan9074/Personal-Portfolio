@@ -8,7 +8,7 @@
 .ck_logo_img {
   width: 6.5vh;
   height: 4vh;
-  margin-left: 20vh;
+  /* margin-left: 20vh; */
 }
 
 .navbar1 {
@@ -97,6 +97,7 @@
   cursor: pointer;
   letter-spacing: 0.2vh;
   border-radius: 1vh;
+  color: black;
 }
 
 .chandan_h_style {
@@ -161,7 +162,6 @@
   width: 60vh;
   font-size: 2.5vh;
   font-family: "Newsreader", serif;
-  text-align: ;
 }
 
 .ul_about {
@@ -463,7 +463,7 @@
 
 .projects {
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,8 +598,8 @@
 
 .contact_me {
   width: 100%;
-  height: 25vh;
-  padding-top: 5vh;
+  /* height: 30vh; */
+  padding: 5vh 0;
   background-color: rgb(5, 73, 73);
   display: flex;
   align-items: center;
@@ -962,13 +962,13 @@
   }
   .projects {
     width: 100%;
-    height: 120vh;
+    /* height: 120vh; */
   }
-  .contact_me {
+  /* .contact_me {
     height: 20vh;
     padding-top: 5vh;
     padding-bottom: 3vh;
-  }
+  } */
   ._me_title {
     margin: 0vh;
     font-size: 3vh;
