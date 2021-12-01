@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectCoverflow } from 'swiper';
 import NavigationBar from './../Shared/NavigationBar'
 import './projectdetails.css';
-import github from './../pictures/git.png'
+import github from './../pictures/github.png'
 import fb from './../pictures/fb.png'
 import lk from './../pictures/lk.png'
 import ins from './../pictures/ins.png'
@@ -56,7 +56,7 @@ const ProjectDetails = () => {
 
                 <SwiperSlide>
                     <div className="h-full flex flex-col items-center justify-center">
-                        <img src={pic} alt="" className="w-4/5 h-96"  />
+                        <img src={pic} alt="" className="w-4/5 h-2/5"  />
                     </div>
                 </SwiperSlide>
                 )}
@@ -71,7 +71,7 @@ const ProjectDetails = () => {
                 <h1 className="mt-5 text-4xl font-semibold">{project.title}</h1>
                 <div className="title-underline rounded-full"></div>
                 <article className="w-3/4 text-justify mt-3">{project.des}</article>
-                <ul className="mt-3">
+                <ul className="mt-3 w-3/4">
                     {points.map(point=>
                     <li className="list-disc">{point}</li>
                     )}
