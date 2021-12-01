@@ -15,6 +15,8 @@ import {
 import ContactMe from './ContactMepage/ContactMe';
 import NavigationBar from './Shared/NavigationBar';
 import ProjectDetails from './ProjectDetailspage/PorjectDetails';
+import Blogs from './Blogs/Blogs';
+import Aboutme from './Aboutme/Aboutme';
 
 function App() {
 
@@ -40,6 +42,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contactme" element={<ContactMe />} />
         <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/aboutme" element={<Aboutme />} />
       </Routes>
     </BrowserRouter>}
     </div>

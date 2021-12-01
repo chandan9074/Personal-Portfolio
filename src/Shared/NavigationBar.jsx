@@ -12,7 +12,9 @@ const NavigationBar = () => {
             <Navbar.Brand href="#home"><img className="ck_logo_img" src={ck_logo} alt="ck_logo..." /></Navbar.Brand>
             <Nav className="me-auto md:mx-auto">
             <Nav.Link><Link to="/" className="nav-btn">Home</Link></Nav.Link>
+            <Nav.Link ><Link to="/aboutme" className="nav-btn">About Me</Link></Nav.Link>
             <Nav.Link ><Link to="/contactme" className="nav-btn">Contact Me</Link></Nav.Link>
+            <Nav.Link ><Link to="/blogs" className="nav-btn">Blogs</Link></Nav.Link>
             </Nav>
             </Container>
         </Navbar>

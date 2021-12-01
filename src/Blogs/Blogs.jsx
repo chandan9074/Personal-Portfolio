@@ -5,7 +5,7 @@ const Blogs = () => {
     return ( 
         <div>
             <NavigationBar />
-            <h1>Comming soon</h1>
+            <h1 className="text-center mt-5">Comming soon</h1>
         </div>
      );
 }

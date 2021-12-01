@@ -111,7 +111,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div id="about" className="about">
+                {/* <div id="about" className="about">
                     <img className="chandan_a_style" src={chandan_a} alt="chandan_a..." data-aos="zoom-in" />
                     <div className="about_me_pos">
                         <p className="about_me_title" data-aos="fade-down">About me</p>
@@ -128,7 +128,7 @@ const Home = () => {
                         Department.
                         </p>
                     </div>
-                </div>
+                </div> */}
 
                 <div id="skill" className="skills">
                     <div className="skill_card" data-aos="fade">

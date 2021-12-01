@@ -4,6 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectCoverflow } from 'swiper';
 import NavigationBar from './../Shared/NavigationBar'
 import './projectdetails.css';
+import github from './../pictures/git.png'
+import fb from './../pictures/fb.png'
+import lk from './../pictures/lk.png'
+import ins from './../pictures/ins.png'
 import SwiperCore from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
@@ -83,6 +87,20 @@ const ProjectDetails = () => {
                         <span>Github Server</span>
                     </a>
                 </div>
+            </div>
+            <div id="contact" className="contact_me">
+                <p className="_me_title" data-aos="fade-down">Connect Me</p>
+                <div>
+                    <div className="under_line_p" data-aos="fade-left"></div>
+                </div>
+                <div className="address_margin flex" data-aos="zoom-out">
+                    <a href="https://github.com/chandan9074/" ><img className="add_size g_btn" src={github} alt="github..." /></a>
+                    <a href="https://www.facebook.com/ChandanRaj0110/" ><img className="add_size f_btn" src={fb} alt="fb..." /></a>
+                    <a href="https://www.linkedin.com/in/chandan-kumar-das-53093720b/" ><img className="add_size l_btn" src={lk} alt="lk..." /></a>
+                    <a href="https://www.instagram.com/chandanraj0110/" ><img className="add_size i_btn" src={ins} alt="ins..." /></a>
+                </div>
+                <a className="mail" href="mailto:chandanraj9074@gmail.com">chandanraj9074@gmail.com</a>
+                <p className="qout">I  AM  ALWAYS  THERE  TO  TALK  TO  YOU</p>
             </div>
         </div>
      );
