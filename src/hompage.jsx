@@ -222,7 +222,8 @@ const Home = () => {
                             <div className="vote_ul" data-aos="fade-left"></div>
                             <p className="vote_des line_elipsis" data-aos="zoom-out">{project.des}
                             </p>
-                            <Link to={`/project/${project.id}}`}>Explore</Link>
+                            {console.log("per", project.id)}
+                            <Link className="project-site-btn" to={`/project/${project.id}`}><span>Explore</span></Link>
                         </div>
                         )}
                     </div>
