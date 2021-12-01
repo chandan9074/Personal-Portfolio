@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './home_style.css';
 import chandan_h from './/pictures/chandan_h.png';
@@ -27,6 +27,7 @@ import ck_logo from './/pictures/ck_logo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavigationBar from './Shared/NavigationBar';
+import { Link } from 'react-router-dom';
 
 
 AOS.init({
@@ -45,6 +46,15 @@ const Home = () => {
     const [prog, setProg] = useState(false)
     const [design, setDesign] = useState(false)
     const [fram, setFram] = useState(false)
+
+    const [projects, setProjects] = useState([]);
+
+    // fetch custom json data 
+    useEffect(()=>{
+        fetch("./project-data.json")
+            .then(res => res.json())
+            .then(res => setProjects(res))
+    }, [])
 
     const handleWeb = () =>{
         setWeb(true);
@@ -203,31 +213,18 @@ const Home = () => {
                     <div >
                         <div className="under_line_p" data-aos="fade-left"></div>
                     </div>
+                    
                     <div className="project_pos">
-                        <div className="hack_card" data-aos="fade-right">
-                            <p className="hack_title" data-aos="zoom-out">Hacksprint</p>
-                            <div className="hack_ul" data-aos="fade-left"></div>
-                            <p className="hack_des" data-aos="zoom-out">In this application people can easily make their skill by problem solving, developing, hackathon and this
-                                awesome application build by Django, JS(React JS), MySQL.
-                            </p>
-                            <a className="git" href="https://github.com/chandan9074/Hacksprint/"><img src={git} alt="git" className="git_img"  /></a>
-                        </div>
+                        {projects.map(project =>
+                        
                         <div className="vote_card" data-aos="zoom-in">
-                            <p className="vote_title" data-aos="zoom-out">Vote!!</p>
+                            <p className="vote_title" data-aos="zoom-out">{project.title}</p>
                             <div className="vote_ul" data-aos="fade-left"></div>
-                            <p className="vote_des" data-aos="zoom-out">By this we can easily find out other's peoples opinion. User can create
-                            private or public poll. React JS, Django, MySQL is use for create this application.
+                            <p className="vote_des line_elipsis" data-aos="zoom-out">{project.des}
                             </p>
-                            <a className="git" href="https://github.com/chandan9074/Vote-Client/"><img src={git} alt="git" className="git_img"  /></a>
+                            <Link to={`/project/${project.id}}`}>Explore</Link>
                         </div>
-                        <div className="link_card"data-aos="fade-left">
-                            <p className="link_title" data-aos="zoom-out">Link Short</p> 
-                            <div className="vote_ul" data-aos="fade-left"></div>
-                            <p className="link_des" data-aos="zoom-out">In this platform user can uasily convert their big link
-                            into short and editable link. React JS, Django, MySQL is use for create this application. 
-                            </p>
-                            <a className="git" href="https://github.com/chandan9074/Link-Short-Client/"><img src={git} alt="git" className="git_img"  /></a>
-                        </div>
+                        )}
                     </div>
                 </div>
 

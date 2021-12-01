@@ -606,6 +606,13 @@
   flex-direction: column;
 }
 
+.line_elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
 ._me_title {
   margin: 0vh;
   font-size: 5vh;

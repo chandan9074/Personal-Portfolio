@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import ContactMe from './ContactMepage/ContactMe';
 import NavigationBar from './Shared/NavigationBar';
+import ProjectDetails from './ProjectDetailspage/PorjectDetails';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contactme" element={<ContactMe />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>}
     </div>
