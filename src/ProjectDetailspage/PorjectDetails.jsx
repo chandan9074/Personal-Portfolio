@@ -41,8 +41,8 @@ const ProjectDetails = () => {
         <div>
             <NavigationBar />
             {/* {project.pic.map? console.log("hello"): null} */}
-            <div className="pt-10">
-                <Swiper className="w-3/4 container" effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'}  autoplay={{
+            <div className="pt-20">
+                <Swiper className="slide" effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'}  autoplay={{
                 "delay": 2500,
                 "disableOnInteraction": false
                 }} coverflowEffect={{

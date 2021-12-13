@@ -7,7 +7,7 @@ import './nav.css';
 
 const NavigationBar = () => {
     return ( 
-        <Navbar bg="light" variant="light">
+        <Navbar bg="light" variant="light" className="zIndex">
             <Container>
             <Navbar.Brand href="#home"><img className="ck_logo_img" src={ck_logo} alt="ck_logo..." /></Navbar.Brand>
             <Nav className="me-auto md:mx-auto">

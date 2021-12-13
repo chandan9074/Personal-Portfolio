@@ -2,6 +2,9 @@
   border-bottom: 5px solid gray;
   width: 10rem;
 }
+.slide{
+    z-index: -10;
+}
 
 .project-site-btn {
   display: inline-block;
